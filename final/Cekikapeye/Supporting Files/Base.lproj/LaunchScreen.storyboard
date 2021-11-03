@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-u0-FHH">
+                                <rect key="frame" x="0.0" y="24" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.19607843137254902" green="0.34901960784313724" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="unv-UI-e2V"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aag-Q4-iKz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.19607843137254902" green="0.34901960784313724" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.80000000000000004" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aag-Q4-iKz" secondAttribute="trailing" id="0KN-tu-lvC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="aag-Q4-iKz" secondAttribute="bottom" id="1yf-dA-en8"/>
+                            <constraint firstItem="aag-Q4-iKz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ckp-Iu-vAC"/>
+                            <constraint firstItem="uQT-u0-FHH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cuu-FH-zKl"/>
+                            <constraint firstItem="aag-Q4-iKz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Q8y-4J-iLu"/>
+                            <constraint firstItem="uQT-u0-FHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eWc-Be-NUo"/>
+                            <constraint firstItem="uQT-u0-FHH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="j9F-XX-NgH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+</document>
