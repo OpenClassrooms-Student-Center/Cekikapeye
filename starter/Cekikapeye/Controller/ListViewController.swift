@@ -13,6 +13,7 @@ final class ListViewController: UIViewController {
     // MARK: - Properties
 
     private let repository = SpendingRepository()
+    private var spendings: [Spending] = []
 
     // MARK: - Outlets
 
@@ -22,6 +23,7 @@ final class ListViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        spendings = repository.spendings
         tableView.reloadData()
     }
 }
@@ -32,13 +34,13 @@ extension ListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repository.spendings.count
+        return spendings.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpendingCell", for: indexPath)
 
-        let spending = repository.spendings[indexPath.row]
+        let spending = spendings[indexPath.row]
         cell.textLabel?.text = spending.content
         cell.detailTextLabel?.text = "\(spending.amount) €"
 
