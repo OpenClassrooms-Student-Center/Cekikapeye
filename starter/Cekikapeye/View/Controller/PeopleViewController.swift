@@ -2,8 +2,8 @@
 //  PeopleTableViewController.swift
 //  Cekikapeye
 //
-//  Created by Ambroise COLLON on 24/05/2018.
-//  Copyright © 2018 OpenClassrooms. All rights reserved.
+//  Created by Bertrand BLOC'H on 03/11/2021.
+//  Copyright © 2021 OpenClassrooms. All rights reserved.
 //
 
 import UIKit
@@ -30,10 +30,10 @@ extension PeopleViewController: UITextFieldDelegate {
     }
 
     private func addPerson() {
-        guard let personName = peopleTextField.text,
-            var people = peopleTextView.text else {
-                return
-        }
+        guard
+            let personName = peopleTextField.text,
+            var people = peopleTextView.text
+        else { return }
 
         people += personName + "\n"
         peopleTextView.text = people

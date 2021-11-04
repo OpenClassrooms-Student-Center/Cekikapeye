@@ -2,8 +2,8 @@
 //  AddSpendingViewController.swift
 //  Cekikapeye
 //
-//  Created by Ambroise COLLON on 21/05/2018.
-//  Copyright © 2018 OpenClassrooms. All rights reserved.
+//  Created by Bertrand BLOC'H on 03/11/2021.
+//  Copyright © 2021 OpenClassrooms. All rights reserved.
 //
 
 import UIKit
@@ -23,12 +23,11 @@ final class AddSpendingViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction private func save() {
-        guard let content = contentTextField.text,
+        guard
+            let content = contentTextField.text,
             let amountText = amountTextField.text,
-            let amount = Double(amountText) else {
-                return
-        }
-
+            let amount = Double(amountText)
+        else { return }
         let spending = Spending(content: content, amount: amount)
         spendingRepository.add(spending: spending)
         navigationController?.popViewController(animated: true)

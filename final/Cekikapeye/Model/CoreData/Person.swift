@@ -2,8 +2,8 @@
 //  Person.swift
 //  Cekikapeye
 //
-//  Created by Morgan on 13/11/2018.
-//  Copyright © 2018 OpenClassrooms. All rights reserved.
+//  Created by Bertrand BLOC'H on 03/11/2021.
+//  Copyright © 2021 OpenClassrooms. All rights reserved.
 //
 
 import Foundation
