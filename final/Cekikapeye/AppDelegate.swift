@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  Cekikapeye
 //
-//  Created by Ambroise COLLON on 21/05/2018.
-//  Copyright © 2018 OpenClassrooms. All rights reserved.
+//  Created by Bertrand BLOC'H on 03/11/2021.
+//  Copyright © 2021 OpenClassrooms. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,4 +17,3 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-

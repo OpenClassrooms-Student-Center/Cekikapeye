@@ -1,5 +1,5 @@
 //
-//  PersonRepository.swift
+//  PeopleRepository.swift
 //  Cekikapeye
 //
 //  Created by Bertrand BLOC'H on 03/11/2021.
@@ -9,8 +9,7 @@
 import Foundation
 import CoreData
 
-
-final class PersonRepository {
+final class PeopleRepository {
 
     // MARK: - Properties
 
@@ -24,27 +23,24 @@ final class PersonRepository {
 
     // MARK: - Repository
 
-    func getPersons(callback: @escaping ([Person]) -> Void) {
-        // create request
+    func getPersons(completion: ([Person]) -> Void) {
         let request: NSFetchRequest<Person> = Person.fetchRequest()
-        // execute request, ie get the saved data
-        guard let persons = try? coreDataStack.viewContext.fetch(request) else {
-            callback([])
-            return
+        do {
+            let persons = try coreDataStack.viewContext.fetch(request)
+            completion(persons)
+        } catch {
+            completion([])
         }
-        callback(persons)
     }
 
-    func savePerson(named name: String, callback: @escaping () -> Void) {
-        // create entity instance with context
+    func savePerson(named name: String, completion: () -> Void) {
         let person = Person(context: coreDataStack.viewContext)
-        // use
         person.name = name
         do {
             try coreDataStack.viewContext.save()
-            callback()
+            completion()
         } catch {
-            print("We were unable to save \(name)")
+            print("We were unable to save \(person)")
         }
     }
 }

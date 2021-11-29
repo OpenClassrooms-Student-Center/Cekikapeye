@@ -2,7 +2,7 @@
 //  ListViewController.swift
 //  Cekikapeye
 //
-//  Created by Ambroise COLLON on 21/05/2018.
+//  Created by Bertrand BLOC'H on 03/11/2021.
 //  Copyright © 2018 OpenClassrooms. All rights reserved.
 //
 

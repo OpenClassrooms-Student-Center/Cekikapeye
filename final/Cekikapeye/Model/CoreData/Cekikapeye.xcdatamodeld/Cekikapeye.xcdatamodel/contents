@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Person" representedClassName=".Person" syncable="YES" codeGenerationType="category">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="spendings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Spending" inverseName="person" inverseEntity="Spending" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="spendings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Spending" inverseName="person" inverseEntity="Spending"/>
     </entity>
     <entity name="Spending" representedClassName=".Spending" syncable="YES" codeGenerationType="category">
-        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="spendings" inverseEntity="Person" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="spendings" inverseEntity="Person"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-566.14453125" positionY="-4.34765625" width="128" height="73"/>
-        <element name="Spending" positionX="-302.30078125" positionY="-19.32421875" width="128" height="88"/>
+        <element name="Person" positionX="-274.5449829101562" positionY="-17.14044189453125" width="128" height="73"/>
+        <element name="Spending" positionX="-89.63726806640625" positionY="-9.622589111328125" width="128" height="88"/>
     </elements>
 </model>

@@ -12,7 +12,7 @@
 		C9C14FE320B32833001DE401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C14FE220B32833001DE401 /* Assets.xcassets */; };
 		C9C14FE620B32833001DE401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C14FE420B32833001DE401 /* LaunchScreen.storyboard */; };
 		C9C14FF620B32F1D001DE401 /* Spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FF520B32F1D001DE401 /* Spending.swift */; };
-		C9C14FF820B33307001DE401 /* SpendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FF720B33307001DE401 /* SpendingService.swift */; };
+		C9C14FF820B33307001DE401 /* SpendingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FF720B33307001DE401 /* SpendingRepository.swift */; };
 		C9C14FFC20B33FC5001DE401 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FFA20B33FC5001DE401 /* ListViewController.swift */; };
 		C9C14FFD20B33FC5001DE401 /* AddSpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FFB20B33FC5001DE401 /* AddSpendingViewController.swift */; };
 		C9C1500520B6B017001DE401 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C1500420B6B017001DE401 /* PeopleViewController.swift */; };
@@ -28,7 +28,7 @@
 		C9C14FE520B32833001DE401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C14FE720B32833001DE401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C14FF520B32F1D001DE401 /* Spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spending.swift; sourceTree = "<group>"; };
-		C9C14FF720B33307001DE401 /* SpendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingService.swift; sourceTree = "<group>"; };
+		C9C14FF720B33307001DE401 /* SpendingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingRepository.swift; sourceTree = "<group>"; };
 		C9C14FFA20B33FC5001DE401 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Cekikapeye/Controller/ListViewController.swift; sourceTree = SOURCE_ROOT; };
 		C9C14FFB20B33FC5001DE401 /* AddSpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSpendingViewController.swift; path = Cekikapeye/Controller/AddSpendingViewController.swift; sourceTree = SOURCE_ROOT; };
 		C9C1500420B6B017001DE401 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C14FF520B32F1D001DE401 /* Spending.swift */,
-				C9C14FF720B33307001DE401 /* SpendingService.swift */,
+				C9C14FF720B33307001DE401 /* SpendingRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C14FF820B33307001DE401 /* SpendingService.swift in Sources */,
+				C9C14FF820B33307001DE401 /* SpendingRepository.swift in Sources */,
 				C9C14FFD20B33FC5001DE401 /* AddSpendingViewController.swift in Sources */,
 				C9C1500720B6BB44001DE401 /* SettingsViewController.swift in Sources */,
 				C9C1500920B6BB85001DE401 /* CircleButton.swift in Sources */,
