@@ -12,7 +12,7 @@ final class ListViewController: UIViewController {
 
     // MARK: - Properties
 
-    private let repository = SpendingRepository()
+    private let repository = SpendingRepository.sharedInstance
 
     // MARK: - Outlets
 

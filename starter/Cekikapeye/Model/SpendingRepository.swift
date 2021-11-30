@@ -14,9 +14,11 @@ final class SpendingRepository {
     
     private(set) var spendings = [Spending]()
 
+    static let sharedInstance = SpendingRepository()
+
     // MARK: - Initializer
 
-    init() {}
+    private init() {}
 
     // MARK: - Repository
 

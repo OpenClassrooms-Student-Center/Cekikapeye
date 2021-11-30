@@ -12,7 +12,7 @@ final class AddSpendingViewController: UIViewController {
 
     // MARK: - Properties
 
-    private let spendingRepository = SpendingRepository()
+    private let spendingRepository = SpendingRepository.sharedInstance
 
     // MARK: - Outlets
 
